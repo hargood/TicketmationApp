@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA2EDC5E-C187-438E-BB43-8A0ABB517819}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TicketmationApp.My.MyApplication</StartupObject>
+    <RootNamespace>TicketmationApp</RootNamespace>
+    <AssemblyName>TicketmationApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TicketmationApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TicketmationApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>TicketmationApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>TicketmationApp.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pc01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\pEngineVbNet_v2\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizeNetProcess.vb" />
+    <Compile Include="CreditCardProcessing.vb" />
+    <Compile Include="DataBase.vb" />
+    <Compile Include="frmAuthorize.Designer.vb">
+      <DependentUpon>frmAuthorize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuthorize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatch.Designer.vb">
+      <DependentUpon>frmBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBatchProcess.Designer.vb">
+      <DependentUpon>frmBatchProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBatchProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirstPage.Designer.vb">
+      <DependentUpon>frmFirstPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirstPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFirstPageAOP.Designer.vb">
+      <DependentUpon>frmFirstPageAOP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFirstPageAOP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertCard.Designer.vb">
+      <DependentUpon>frmInsertCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainAN.Designer.vb">
+      <DependentUpon>frmMainAN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainAN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrinterError.Designer.vb">
+      <DependentUpon>frmPrinterError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrinterError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaleProcessing.Designer.vb">
+      <DependentUpon>frmSaleProcessing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleProcessing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecifyTickets.Designer.vb">
+      <DependentUpon>frmSpecifyTickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecifyTickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStartup.Designer.vb">
+      <DependentUpon>frmStartup.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSwipProcess.Designer.vb">
+      <DependentUpon>frmSwipProcess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSwipProcess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTicketStock.Designer.vb">
+      <DependentUpon>frmTicketStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTicketStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmZipCode.Designer.vb">
+      <DependentUpon>frmZipCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmZipCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTicketmation.Designer.vb">
+      <DependentUpon>fTicketmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fTicketmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiTrade.vb" />
+    <Compile Include="ModSupport.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VerifyPurchase.Designer.vb">
+      <DependentUpon>VerifyPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAuthorize.resx">
+      <DependentUpon>frmAuthorize.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatch.resx">
+      <DependentUpon>frmBatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBatchProcess.resx">
+      <DependentUpon>frmBatchProcess.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirstPage.resx">
+      <DependentUpon>frmFirstPage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFirstPageAOP.resx">
+      <DependentUpon>frmFirstPageAOP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertCard.resx">
+      <DependentUpon>frmInsertCard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainAN.resx">
+      <DependentUpon>frmMainAN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrinterError.resx">
+      <DependentUpon>frmPrinterError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaleProcessing.resx">
+      <DependentUpon>frmSaleProcessing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpecifyTickets.resx">
+      <DependentUpon>frmSpecifyTickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStartup.resx">
+      <DependentUpon>frmStartup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSwipProcess.resx">
+      <DependentUpon>frmSwipProcess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTicketStock.resx">
+      <DependentUpon>frmTicketStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmZipCode.resx">
+      <DependentUpon>frmZipCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTicketmation.resx">
+      <DependentUpon>fTicketmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyPurchase.resx">
+      <DependentUpon>VerifyPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debugxx\TicketmationApp.exe.config" />
+    <None Include="bin\Debugxx\TicketmationApp.vshost.exe.config" />
+    <None Include="bin\Debugxx\TicketmationApp.vshost.exe.manifest" />
+    <None Include="bin\Debug\TicketmationApp.exe.config" />
+    <None Include="bin\Debug\TicketmationApp.vshost.exe.config" />
+    <None Include="bin\Debug\TicketmationApp.vshost.exe.manifest" />
+    <None Include="bin\Release\TicketmationApp.exe.config" />
+    <None Include="bin\Release\TicketmationApp.vshost.exe.config" />
+    <None Include="bin\Release\TicketmationApp.vshost.exe.manifest" />
+    <None Include="bin\x86\Debug\TicketmationApp.exe.config" />
+    <None Include="bin\x86\Debug\TicketmationApp.vshost.exe.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NY_Logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="InsertCardv1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxctlUSBHID">
+      <Guid>{158336E7-3FF3-456E-912C-5985E9BBED24}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxMSCommLib">
+      <Guid>{648A5603-2C6E-101B-82B6-000000000014}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ctlUSBHID">
+      <Guid>{158336E7-3FF3-456E-912C-5985E9BBED24}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSCommLib">
+      <Guid>{648A5603-2C6E-101B-82B6-000000000014}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ticketmation_logo_trans4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ticketmation_logo_trans.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debugxx\NY_Logo.gif" />
+    <Content Include="bin\Debugxx\TicketmationApp.vshost.exe" />
+    <Content Include="bin\Debugxx\ticketmation_logo_trans4.gif" />
+    <Content Include="bin\Debug\AxInterop.ctlUSBHID.dll" />
+    <Content Include="bin\Debug\hid.dll" />
+    <Content Include="bin\Debug\Interop.ctlUSBHID.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\NY_Logo.gif" />
+    <Content Include="bin\Debug\RemoveVisa.gif" />
+    <Content Include="bin\Debug\TicketmationApp.exe" />
+    <Content Include="bin\Debug\TicketmationApp.pdb" />
+    <Content Include="bin\Debug\TicketmationApp.vshost.exe" />
+    <Content Include="bin\Debug\TicketmationApp.xml" />
+    <Content Include="bin\Release\Newtonsoft.Json.dll" />
+    <Content Include="bin\Release\Newtonsoft.Json.xml" />
+    <Content Include="bin\Release\TicketmationApp.exe" />
+    <Content Include="bin\Release\TicketmationApp.pdb" />
+    <Content Include="bin\Release\TicketmationApp.vshost.exe" />
+    <Content Include="bin\Release\TicketmationApp.xml" />
+    <Content Include="bin\x86\Debug\AxInterop.ctlUSBHID.dll" />
+    <Content Include="bin\x86\Debug\Interop.ctlUSBHID.dll" />
+    <Content Include="bin\x86\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\x86\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\x86\Debug\TicketmationApp.exe" />
+    <Content Include="bin\x86\Debug\TicketmationApp.pdb" />
+    <Content Include="bin\x86\Debug\TicketmationApp.vshost.exe" />
+    <Content Include="bin\x86\Debug\TicketmationApp.xml" />
+    <Content Include="pc01.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
