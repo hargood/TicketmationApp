@@ -190,9 +190,5 @@ ModelManifest.xml
 *.jpg
 *.gif
 *.pptx
-Package/*
-*.DEP
-*.oca
-*.ocx
 pEngineVbNet_v2/*
 *.xlsx

@@ -8,6 +8,7 @@ Public Class frmMainAN
         Dim iDefaults(2) As Integer
         Me.Width = 1000
         Me.Height = 1000
+        lVersion.Text = Me.GetType.Assembly.GetName.Version.ToString
         'Set controls
         bTest = False
         bDebug = False
@@ -132,6 +133,10 @@ Public Class frmMainAN
 
     Private Sub cmdBatch_Click(sender As Object, e As EventArgs) Handles cmdBatch.Click
         frmBatch.Show()
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lVersion.Click
 
     End Sub
 End Class

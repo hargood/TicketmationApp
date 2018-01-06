@@ -40,57 +40,58 @@ Partial Class frmMainAN
         Me.cmdLog = New System.Windows.Forms.Button()
         Me.cmdBatch = New System.Windows.Forms.Button()
         Me.txtShow = New System.Windows.Forms.TextBox()
-        Me.SuspendLayout()
+        Me.lVersion = New System.Windows.Forms.Label()
+        Me.SuspendLayout
         '
         'cmdTicketStock
         '
-        Me.cmdTicketStock.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmdTicketStock.BackColor = System.Drawing.Color.FromArgb(CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer))
         Me.cmdTicketStock.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.cmdTicketStock.FlatAppearance.BorderSize = 20
         Me.cmdTicketStock.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdTicketStock.Font = New System.Drawing.Font("Arial", 15.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdTicketStock.Font = New System.Drawing.Font("Arial", 15.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdTicketStock.Location = New System.Drawing.Point(479, 320)
         Me.cmdTicketStock.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdTicketStock.Name = "cmdTicketStock"
         Me.cmdTicketStock.Size = New System.Drawing.Size(457, 107)
         Me.cmdTicketStock.TabIndex = 47
         Me.cmdTicketStock.Text = "Set Ticket Stock"
-        Me.cmdTicketStock.UseVisualStyleBackColor = False
+        Me.cmdTicketStock.UseVisualStyleBackColor = false
         '
         'cmdExit
         '
-        Me.cmdExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.cmdExit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer))
         Me.cmdExit.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.cmdExit.FlatAppearance.BorderSize = 2
         Me.cmdExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
         Me.cmdExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdExit.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdExit.Font = New System.Drawing.Font("Arial", 18!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdExit.Location = New System.Drawing.Point(90, 1017)
         Me.cmdExit.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdExit.Name = "cmdExit"
         Me.cmdExit.Size = New System.Drawing.Size(500, 161)
         Me.cmdExit.TabIndex = 46
         Me.cmdExit.Text = "EXIT"
-        Me.cmdExit.UseVisualStyleBackColor = False
+        Me.cmdExit.UseVisualStyleBackColor = false
         '
         'cmdSecurity
         '
         Me.cmdSecurity.BackColor = System.Drawing.Color.Silver
-        Me.cmdSecurity.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.cmdSecurity.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.cmdSecurity.FlatAppearance.BorderSize = 4
         Me.cmdSecurity.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdSecurity.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdSecurity.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdSecurity.Location = New System.Drawing.Point(2073, 392)
         Me.cmdSecurity.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdSecurity.Name = "cmdSecurity"
         Me.cmdSecurity.Size = New System.Drawing.Size(117, 90)
         Me.cmdSecurity.TabIndex = 45
         Me.cmdSecurity.Text = "+"
-        Me.cmdSecurity.UseVisualStyleBackColor = False
+        Me.cmdSecurity.UseVisualStyleBackColor = false
         '
         'txtSecurity
         '
-        Me.txtSecurity.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSecurity.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.txtSecurity.Location = New System.Drawing.Point(1943, 392)
         Me.txtSecurity.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSecurity.Name = "txtSecurity"
@@ -101,8 +102,8 @@ Partial Class frmMainAN
         '
         'lblSecurity
         '
-        Me.lblSecurity.AutoSize = True
-        Me.lblSecurity.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSecurity.AutoSize = true
+        Me.lblSecurity.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblSecurity.Location = New System.Drawing.Point(1544, 392)
         Me.lblSecurity.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSecurity.Name = "lblSecurity"
@@ -112,62 +113,62 @@ Partial Class frmMainAN
         '
         'cmdBegin
         '
-        Me.cmdBegin.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.cmdBegin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.cmdBegin.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(192,Byte),Integer))
+        Me.cmdBegin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.cmdBegin.FlatAppearance.BorderSize = 2
         Me.cmdBegin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
         Me.cmdBegin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdBegin.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdBegin.Font = New System.Drawing.Font("Arial", 18!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdBegin.Location = New System.Drawing.Point(90, 802)
         Me.cmdBegin.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdBegin.Name = "cmdBegin"
         Me.cmdBegin.Size = New System.Drawing.Size(500, 161)
         Me.cmdBegin.TabIndex = 42
         Me.cmdBegin.Text = "START"
-        Me.cmdBegin.UseVisualStyleBackColor = False
+        Me.cmdBegin.UseVisualStyleBackColor = false
         '
         'CheckAmex
         '
-        Me.CheckAmex.AutoSize = True
-        Me.CheckAmex.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckAmex.AutoSize = true
+        Me.CheckAmex.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.CheckAmex.Location = New System.Drawing.Point(479, 202)
         Me.CheckAmex.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckAmex.Name = "CheckAmex"
         Me.CheckAmex.Size = New System.Drawing.Size(200, 60)
         Me.CheckAmex.TabIndex = 41
         Me.CheckAmex.Text = "AMEX"
-        Me.CheckAmex.UseVisualStyleBackColor = True
+        Me.CheckAmex.UseVisualStyleBackColor = true
         '
         'CheckDiscover
         '
-        Me.CheckDiscover.AutoSize = True
-        Me.CheckDiscover.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckDiscover.AutoSize = true
+        Me.CheckDiscover.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.CheckDiscover.Location = New System.Drawing.Point(479, 114)
         Me.CheckDiscover.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckDiscover.Name = "CheckDiscover"
         Me.CheckDiscover.Size = New System.Drawing.Size(389, 60)
         Me.CheckDiscover.TabIndex = 40
         Me.CheckDiscover.Text = "Discover Card"
-        Me.CheckDiscover.UseVisualStyleBackColor = True
+        Me.CheckDiscover.UseVisualStyleBackColor = true
         '
         'cmdSessionCounter
         '
         Me.cmdSessionCounter.BackColor = System.Drawing.Color.Silver
-        Me.cmdSessionCounter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.cmdSessionCounter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.cmdSessionCounter.FlatAppearance.BorderSize = 4
         Me.cmdSessionCounter.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdSessionCounter.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdSessionCounter.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdSessionCounter.Location = New System.Drawing.Point(2073, 252)
         Me.cmdSessionCounter.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdSessionCounter.Name = "cmdSessionCounter"
         Me.cmdSessionCounter.Size = New System.Drawing.Size(117, 90)
         Me.cmdSessionCounter.TabIndex = 39
         Me.cmdSessionCounter.Text = "+"
-        Me.cmdSessionCounter.UseVisualStyleBackColor = False
+        Me.cmdSessionCounter.UseVisualStyleBackColor = false
         '
         'txtSessionCounter
         '
-        Me.txtSessionCounter.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSessionCounter.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.txtSessionCounter.Location = New System.Drawing.Point(1943, 252)
         Me.txtSessionCounter.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSessionCounter.Name = "txtSessionCounter"
@@ -179,21 +180,21 @@ Partial Class frmMainAN
         'cmdDeviveUP
         '
         Me.cmdDeviveUP.BackColor = System.Drawing.Color.Silver
-        Me.cmdDeviveUP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.cmdDeviveUP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.cmdDeviveUP.FlatAppearance.BorderSize = 4
         Me.cmdDeviveUP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdDeviveUP.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdDeviveUP.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdDeviveUP.Location = New System.Drawing.Point(2073, 133)
         Me.cmdDeviveUP.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdDeviveUP.Name = "cmdDeviveUP"
         Me.cmdDeviveUP.Size = New System.Drawing.Size(117, 90)
         Me.cmdDeviveUP.TabIndex = 37
         Me.cmdDeviveUP.Text = "+"
-        Me.cmdDeviveUP.UseVisualStyleBackColor = False
+        Me.cmdDeviveUP.UseVisualStyleBackColor = false
         '
         'txtIP
         '
-        Me.txtIP.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIP.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.txtIP.Location = New System.Drawing.Point(1943, 133)
         Me.txtIP.Margin = New System.Windows.Forms.Padding(4)
         Me.txtIP.Name = "txtIP"
@@ -204,8 +205,8 @@ Partial Class frmMainAN
         '
         'lblSessCntr
         '
-        Me.lblSessCntr.AutoSize = True
-        Me.lblSessCntr.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSessCntr.AutoSize = true
+        Me.lblSessCntr.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblSessCntr.Location = New System.Drawing.Point(1507, 252)
         Me.lblSessCntr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSessCntr.Name = "lblSessCntr"
@@ -215,8 +216,8 @@ Partial Class frmMainAN
         '
         'lblDevID
         '
-        Me.lblDevID.AutoSize = True
-        Me.lblDevID.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDevID.AutoSize = true
+        Me.lblDevID.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblDevID.Location = New System.Drawing.Point(1671, 136)
         Me.lblDevID.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDevID.Name = "lblDevID"
@@ -226,9 +227,9 @@ Partial Class frmMainAN
         '
         'lblSelectEvent
         '
-        Me.lblSelectEvent.AutoSize = True
-        Me.lblSelectEvent.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSelectEvent.Location = New System.Drawing.Point(96, 31)
+        Me.lblSelectEvent.AutoSize = true
+        Me.lblSelectEvent.Font = New System.Drawing.Font("Arial", 14.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblSelectEvent.Location = New System.Drawing.Point(96, 55)
         Me.lblSelectEvent.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSelectEvent.Name = "lblSelectEvent"
         Me.lblSelectEvent.Size = New System.Drawing.Size(372, 56)
@@ -237,49 +238,59 @@ Partial Class frmMainAN
         '
         'cmdLog
         '
-        Me.cmdLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmdLog.BackColor = System.Drawing.Color.FromArgb(CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer))
         Me.cmdLog.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.cmdLog.FlatAppearance.BorderSize = 20
         Me.cmdLog.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdLog.Font = New System.Drawing.Font("Arial", 15.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdLog.Font = New System.Drawing.Font("Arial", 15.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdLog.Location = New System.Drawing.Point(479, 459)
         Me.cmdLog.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdLog.Name = "cmdLog"
         Me.cmdLog.Size = New System.Drawing.Size(457, 95)
         Me.cmdLog.TabIndex = 48
         Me.cmdLog.Text = "View Log"
-        Me.cmdLog.UseVisualStyleBackColor = False
+        Me.cmdLog.UseVisualStyleBackColor = false
         '
         'cmdBatch
         '
-        Me.cmdBatch.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.cmdBatch.BackColor = System.Drawing.Color.FromArgb(CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer), CType(CType(224,Byte),Integer))
         Me.cmdBatch.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.cmdBatch.FlatAppearance.BorderSize = 20
         Me.cmdBatch.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cmdBatch.Font = New System.Drawing.Font("Arial", 15.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmdBatch.Font = New System.Drawing.Font("Arial", 15.9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.cmdBatch.Location = New System.Drawing.Point(479, 603)
         Me.cmdBatch.Margin = New System.Windows.Forms.Padding(4)
         Me.cmdBatch.Name = "cmdBatch"
         Me.cmdBatch.Size = New System.Drawing.Size(457, 100)
         Me.cmdBatch.TabIndex = 49
         Me.cmdBatch.Text = "Batch"
-        Me.cmdBatch.UseVisualStyleBackColor = False
+        Me.cmdBatch.UseVisualStyleBackColor = false
         '
         'txtShow
         '
-        Me.txtShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtShow.Location = New System.Drawing.Point(479, 12)
+        Me.txtShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 18!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtShow.Location = New System.Drawing.Point(479, 36)
         Me.txtShow.Name = "txtShow"
         Me.txtShow.Size = New System.Drawing.Size(1711, 75)
         Me.txtShow.TabIndex = 50
         '
+        'lVersion
+        '
+        Me.lVersion.AutoSize = true
+        Me.lVersion.Location = New System.Drawing.Point(28, 9)
+        Me.lVersion.Name = "lVersion"
+        Me.lVersion.Size = New System.Drawing.Size(52, 32)
+        Me.lVersion.TabIndex = 51
+        Me.lVersion.Text = "v 1"
+        '
         'frmMainAN
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(16!, 31!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(192,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.ClientSize = New System.Drawing.Size(2281, 1271)
-        Me.ControlBox = False
+        Me.ControlBox = false
+        Me.Controls.Add(Me.lVersion)
         Me.Controls.Add(Me.txtShow)
         Me.Controls.Add(Me.cmdBatch)
         Me.Controls.Add(Me.cmdLog)
@@ -302,10 +313,10 @@ Partial Class frmMainAN
         Me.Name = "frmMainAN"
         Me.Text = "Administration"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents cmdTicketStock As System.Windows.Forms.Button
     Friend WithEvents cmdExit As System.Windows.Forms.Button
     Friend WithEvents cmdSecurity As System.Windows.Forms.Button
@@ -324,4 +335,5 @@ Partial Class frmMainAN
     Friend WithEvents cmdLog As System.Windows.Forms.Button
     Friend WithEvents cmdBatch As System.Windows.Forms.Button
     Friend WithEvents txtShow As System.Windows.Forms.TextBox
+    Friend WithEvents lVersion As System.Windows.Forms.Label
 End Class
