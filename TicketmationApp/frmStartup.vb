@@ -16,8 +16,8 @@ Public Class frmStartup
         If Not bHaveInternet Then
             lMessage.Text = "***************NI********************"
             lMessage.Left = lblWelcome.Width / 2 + lblWelcome.Left - lMessage.Width / 2
-            ClickImage1.Visible = False
-            ClickImage2.Visible = False
+            'ClickImage1.Visible = False
+            'ClickImage2.Visible = False
             Exit Sub
         End If
         'Determine if existing Process
@@ -30,8 +30,8 @@ Public Class frmStartup
                     Else
                         lMessage.Text = "*********App is running-Reboot**********"
                         lMessage.Left = lblWelcome.Width / 2 + lblWelcome.Left - lMessage.Width / 2
-                        ClickImage1.Visible = False
-                        ClickImage2.Visible = False
+                        'ClickImage1.Visible = False
+                        'ClickImage2.Visible = False
                         Exit Sub
                         'MsgBox("Application is running!")
                         'End
@@ -74,8 +74,8 @@ Public Class frmStartup
             lMessage.Text = "*************Printer Not Attached*********************"
             lMessage.Left = lblWelcome.Width / 2 + lblWelcome.Left - lMessage.Width / 2
             If lMessage.Left < 0 Then lMessage.Left = 0
-            ClickImage1.Visible = False
-            ClickImage2.Visible = False
+            'ClickImage1.Visible = False
+            'ClickImage2.Visible = False
         End Try
 
 

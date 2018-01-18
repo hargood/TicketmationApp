@@ -5,8 +5,9 @@
     Public strComputerName As String
     Public intComPort As Integer
     Public SessionCounter As String
-    Public strConnectionString As String = "MSAccess"
+    Public strConnectionString As String = "MSAccessOP"
     Public bHaveInternet As Boolean = True
+
     'DATABASE
     '    Public con As New OledbConnection("Provider=microsoft.Jet.oledb.4.0DataSource=D:\mydata.mdb;")
     '    Public wrkjet As DataTable

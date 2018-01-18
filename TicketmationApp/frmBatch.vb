@@ -116,6 +116,7 @@ Public Class frmBatch
                 If CardApproved Then
                     RecordPurchase(TotalPrice)
                     BarCode = "batch"
+                    SwipTime = Now()
                     UpdateSQLPurchase()
                 End If
                 'Update Batch

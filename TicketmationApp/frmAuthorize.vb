@@ -251,7 +251,7 @@ PrintProblem:
 
             lblProcessing.Text = "APPROVED...TICKETS PRINTING"
             lblDoNotRemove.Text = ""
-            LogClick("Authorize", "Approved for " & CardNumber)
+            LogClick("Authorize", "Approved for " & "********" & CardNumber.Substring(CardNumber.Length - 4))
 
             PrintTickets()
             If PrinterError Then GoTo PrintError

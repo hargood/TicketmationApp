@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports System.Deployment
 
 Public Class frmMainAN
 
@@ -6,9 +7,11 @@ Public Class frmMainAN
         Dim INIT(3) As Integer
         Dim Show(11) As String
         Dim iDefaults(2) As Integer
+        'Dim exePath As String = Application.StartupPath & My.Application.Info.AssemblyName & ".exe"
+        'Dim exeDate As DateTime = My.Computer.FileSystem.GetFileInfo(exePath).LastWriteTime
+        lVersion.Text = Me.GetType.Assembly.GetName.Version.ToString
         Me.Width = 1000
         Me.Height = 1000
-        lVersion.Text = Me.GetType.Assembly.GetName.Version.ToString
         'Set controls
         bTest = False
         bDebug = False
