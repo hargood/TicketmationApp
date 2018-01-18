@@ -5,7 +5,7 @@
     Public strComputerName As String
     Public intComPort As Integer
     Public SessionCounter As String
-    Public strConnectionString As String = "MSAccessOP"
+    Public strConnectionString As String = "MSAccess"
     Public bHaveInternet As Boolean = True
 
     'DATABASE

@@ -3,6 +3,7 @@ Public Class frmSwipProcess
 
     Private Sub frmSwipProcess_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If bDEMO Then
+            CardNumber = "1234560000"
             CardApproved = True
             TransactionID = "-9999999999"
             ReferenceID = TransactionID
